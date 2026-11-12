@@ -8,7 +8,7 @@ function draw() {
   background(255, 0, 230);//RGB-red-green-blue
 
 
-  noStroke()
+  noStroke(1)
   fill(225,0,0)
   rect(100,100,200,300)
   
@@ -16,9 +16,15 @@ function draw() {
   fill(0,0,0)
   ellipse(275,250,10,10)
 
-  triangle(100,100,300,100)
-  stroke(1)
-  fill(55,0,0)
+  triangle(100,400,200,400,100)
+   noStroke(1)
+  fill(225,0,0)
   rect(250,260,100,100)
+
+  
+  rect(1,2,44,44)
+  fill(50.50,50)
+  ellipse(200,170,100,100)
+  
   
 }//End of draw function
