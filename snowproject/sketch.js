@@ -10,6 +10,7 @@ function draw() {
   noStroke()
   circle(1,1,150)
   fill(165, 42, 42)
-  rect(600,700,100,200)
+  rect(600,700,50,200)
+  triangle(750, 750, 600, 600, 700, 600)
   
 }
