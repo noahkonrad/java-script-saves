@@ -49,7 +49,20 @@ function draw() {
   fill(255);
   rect(0, 785, 800, 15);
 
+  // Simple dog beside the house
+  fill(150, 95, 50);
+  rect(180, 745, 45, 30); // body
+  rect(180, 770, 10, 15); // back leg
+  rect(215, 770, 10, 15); // front leg
+  triangle(180, 748, 168, 735, 180, 758); // tail
+  circle(225, 738, 30); // head
+
+  fill(0);
+  circle(230, 735, 4); // eye
+  circle(240, 740, 5); // nose
+
   // Static snowflakes
+  fill(255);
   randomSeed(1);
   for (var i = 0; i < 100; i++) {
     circle(random(800), random(800), 6);
@@ -65,4 +78,7 @@ function draw() {
   if (cloud2 > 800) {
     cloud2 = 0;
   }
+
+  console.log("cloudX: " + cloudX);
+  console.log("cloud2: " + cloud2);
 }
