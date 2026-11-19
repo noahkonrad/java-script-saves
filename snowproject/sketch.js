@@ -50,7 +50,7 @@ function draw() {
   fill(255);
   rect(0, 785, 800, 15);
 
-  // Simple dog beside the house
+  //dog 
   fill(150, 95, 50);
   rect(180, 745, 45, 30); // body
   rect(180, 770, 10, 15); // back leg
