@@ -7,7 +7,7 @@ function setup() {
   describe("A 800 by 800 pixel gray canvas.");
   cloudX = 400;
   cloud2 = 0;
-  cloudspeed=0.5
+  cloudspeed =1
 }
 
 function draw() {
