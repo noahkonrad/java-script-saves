@@ -105,4 +105,5 @@ function draw() {
 
   console.log("cloudX: " + cloudX);
   console.log("cloud2: " + cloud2);
+  console.log("cloudspeed: "+ cloudspeed)
 }
