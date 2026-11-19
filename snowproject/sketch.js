@@ -1,12 +1,13 @@
 var cloudX;
 var cloud2;
-
+var cloudspeed;
 function setup() {
   createCanvas(800, 800);
   // Help blind or low-vision users understand your sketch
   describe("A 800 by 800 pixel gray canvas.");
   cloudX = 400;
   cloud2 = 0;
+  cloudspeed=0.5
 }
 
 function draw() {
@@ -34,7 +35,7 @@ function draw() {
   triangle(550, 750, 625, 650, 700, 750);
 
   // House square
-  fill(230, 220, 200);
+  fill(255,0,0);
   rect(300, 600, 200, 200);
 
   // Roof
@@ -57,19 +58,42 @@ function draw() {
   triangle(180, 748, 168, 735, 180, 758); // tail
   circle(225, 738, 30); // head
 
+  fill(95, 55, 25);
+  triangle(213, 728, 223, 728, 210, 745); // ear
+
   fill(0);
   circle(230, 735, 4); // eye
   circle(240, 740, 5); // nose
 
-  // Static snowflakes
+  // person
+  fill(255, 220, 180);
+  circle(100, 690, 35); // head
+  rect(70, 712, 15, 8); // arm
+  rect(115, 712, 15, 8); // other arm
+  fill(0, 0, 255);
+  rect(85, 708, 30, 45); // shirt
+  fill(0);
+  rect(87, 753, 10, 32); // leg
+  rect(103, 753, 10, 32); // other leg
+
+  // snowman
+  fill(255);
+  circle(730, 760, 55);
+  circle(730, 720, 40);
+  circle(730, 690, 28);
+  fill(0);
+  fill(255, 165, 0);
+  fill(100, 50, 0);
+
+  // snowflakes
   fill(255);
   randomSeed(1);
   for (var i = 0; i < 100; i++) {
     circle(random(800), random(800), 6);
   }
 
-  cloudX += 1;
-  cloud2 += 1;
+  cloudX += cloudspeed;
+  cloud2 += cloudspeed;
 
   if (cloudX > 800) {
     cloudX = 0;
