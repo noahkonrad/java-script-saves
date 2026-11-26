@@ -6,7 +6,7 @@ let clicker
 async function setup() {
   createCanvas(2000, 2000);
   background1 = await loadImage("backround (3).png");
-  clicker = await loadImage("main_locomotive.png)
+  clicker = await loadImage("main_locomotive.png");
 }
 
 function draw() {
