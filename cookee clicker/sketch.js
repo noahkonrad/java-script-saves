@@ -7,7 +7,6 @@ let bodyshopbuy;
 let wheelshopbuy;
 let cuplershopbuy;
 
-a
 async function setup() {
   createCanvas(2000, 2000);
 
